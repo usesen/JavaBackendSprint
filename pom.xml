@@ -8,10 +8,10 @@
 		<version>2.3.0.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.javacourse</groupId>
-	<artifactId>sprigBootDemoProject</artifactId>
+	<groupId>com.javacourse.project</groupId>
+	<artifactId>hibernateAndJpa</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>sprigBootDemoProject</name>
+	<name>hibernateAndJpa</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -19,7 +19,7 @@
 	</properties>
 
 	<dependencies>
-	  <dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
@@ -42,13 +42,26 @@
 		<dependency>
    			 <groupId>mysql</groupId>
    			 <artifactId>mysql-connector-java</artifactId>
-   			 <version>8.0.20</version>
+   		<!--	 <version>8.0.20</version> -->
 		</dependency>
+		 
+		<dependency>
+  		  <groupId>javax.validation</groupId>
+    	  <artifactId>validation-api</artifactId>
+         <!--	 <version>1.0.0.GA</version> -->
+       </dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-crypto -->
+		<dependency>
+  		  <groupId>org.springframework.security</groupId>
+  		  <artifactId>spring-security-crypto</artifactId>
+   		<!--   <version>3.1.0.RELEASE</version> -->
+	</dependency>
+		
 	</dependencies>
 
 	<build>

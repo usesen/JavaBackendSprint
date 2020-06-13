@@ -2,6 +2,7 @@ package com.hoaxify.backendRestAPI.Business;
 
 import java.util.List;
 
+
 import org.springframework.transaction.annotation.Transactional;
 
 import com.hoaxify.backendRestAPI.DataAccess.IUserDal;
@@ -38,13 +39,13 @@ public class UserManager implements IUserService{
 
 	@Override
 	public void delete(User user) {
-		this.userDal.update(delete);
+		this.userDal.update(user);
 	}
 
 	@Override
 	public User getById(int id) {
 	 
-		return this.cityDal.getById(id);
+		return this.userDal.getById(id);
 	}
 
 }
